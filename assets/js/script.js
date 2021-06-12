@@ -92,3 +92,15 @@ setTimeout(function () {
     window.location.reload();
 }, (1000 * 60) * 15);
 // END auto-reload page
+
+// START clear the events at the end of day
+var clearEvents = function () {
+    if (currentHour < 8 || currentHour > 17) {
+        $('.textInput').text('');
+        localStorage.removeItem('events');
+    }
+};
+// END clear events
+
+loadEvents();
+clearEvents();
