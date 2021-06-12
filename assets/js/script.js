@@ -29,3 +29,18 @@ for (let i = 0; i < idArr.length; i++) {
     };
 }
 // END color changing based on time
+
+// START edit events in time-blocks 
+    // on click change time-block into textarea to add events
+    $(".disabled").on('click', function () {
+        console.log(this);
+        //  var to select the existing text
+        var text = $(this).text().trim();
+        // var to create new textarea
+        var textP = $("<textarea>")
+            .addClass("textInput")
+            .text(text);
+        // add textarea to the dom
+        $(this).children('p').replaceWith(textP);
+        textP.trigger("focus");
+    });
