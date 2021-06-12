@@ -86,3 +86,9 @@ var loadEvents = function () {
     }
 };
 // END load local storage
+
+// START auto-reload page
+setTimeout(function () {
+    window.location.reload();
+}, (1000 * 60) * 15);
+// END auto-reload page
