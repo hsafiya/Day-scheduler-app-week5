@@ -44,3 +44,14 @@ for (let i = 0; i < idArr.length; i++) {
         $(this).children('p').replaceWith(textP);
         textP.trigger("focus");
     });
+
+    
+    // change textarea back to p when clicked anywhere else
+$(".disabled").on("blur", "textarea", function () {
+    var text = $(this).val().trim();
+    var p = $("<p>")
+        .addClass("textInput")
+        .text(text);
+    $(this).replaceWith(p);
+});
+// END edit events in time-blocks
