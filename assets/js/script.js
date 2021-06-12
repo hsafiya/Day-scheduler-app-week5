@@ -55,3 +55,23 @@ $(".disabled").on("blur", "textarea", function () {
     $(this).replaceWith(p);
 });
 // END edit events in time-blocks
+
+// START save on local storage
+$('.saveBtn').on('click', function () {
+    // retrieve any info from localStorage
+    var eventListStorage = JSON.parse(localStorage.getItem('events')) || [];
+    // initialize a new array
+    var eventList = [];
+    // collect data from the event container
+    var text = $(this).siblings('.time-block').text().trim();
+    var idCount = $(this).siblings('.time-block').attr('id');
+    // add the data to an object
+    var timeBlock = { text, idCount };
+    // add the object to the array
+    eventList.push(timeBlock);
+    // merge the data arrays
+    eventListStorage = eventListStorage.concat(eventList);
+    // save new data array to localStorage
+    localStorage.setItem('events', JSON.stringify(eventListStorage));
+});
+// END save on local storage
