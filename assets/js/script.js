@@ -75,3 +75,14 @@ $('.saveBtn').on('click', function () {
     localStorage.setItem('events', JSON.stringify(eventListStorage));
 });
 // END save on local storage
+
+// START load local storage
+var loadEvents = function () {
+    var eventListStorage = JSON.parse(localStorage.getItem('events')) || [];
+    for (let i = 0; i < eventListStorage.length; i++) {
+        var textEl = eventListStorage[i].text;
+        var id = '#' + eventListStorage[i].idCount;
+        $(id).children('p').text(textEl);
+    }
+};
+// END load local storage
