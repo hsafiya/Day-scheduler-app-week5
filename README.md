@@ -14,4 +14,4 @@ The Work Day Scheduler App is designed to help scheduling events through out nor
 1. GitHub: https://github.com/hsafiya/Day-scheduler-app-week5
 2. Live page: https://hsafiya.github.io/Day-scheduler-app-week5/
 
-![GitHub Logo](/img/screenshot.png)
+![GitHub Logo](./assets/image/screenshot.png)
