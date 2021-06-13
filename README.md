@@ -11,3 +11,7 @@ The Work Day Scheduler App is designed to help scheduling events through out nor
 * The App will auto-refresh every 15 mins, in case the User keeps the App open at all times;
 * At the end of the Bussiness Day, all events will be cleared to allow a fresh start for next day;
 
+1. GitHub: https://github.com/hsafiya/Day-scheduler-app-week5
+2. Live page: https://hsafiya.github.io/Day-scheduler-app-week5/
+
+![GitHub Logo](/img/screenshot.png)
