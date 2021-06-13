@@ -1,4 +1,4 @@
-### Work Day Scheduler 
+# Work Day Scheduler 
 ## Description
 The Work Day Scheduler App is designed to help scheduling events through out normal bussiness hours day.
 ## Features:
